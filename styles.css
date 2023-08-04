@@ -1,22 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
 
-:root {
-    --color: #3369e7;
-    --lighter-color: rgba(51, 105, 231, 0.9);
-    --dark: rgba(0, 0, 0, 0.75);
-    --red: #f78f8f;
-    --green: #9ac5b9;
-    --dark-red: #c24146;
-    --dark-green: #5e9b8d;
-    --container-color: #fff;
-    --textbox-color: #f5f5f5;
-    --text-color: #333; /* Add new text color variable */
-}
-
 body {
     background-color: #f0f0f0;
     margin: 0;
-    color: var(--text-color); /* Updated text color */
+    color: #333;
     min-height: 100vh;
     display: flex;
     justify-content: center;
@@ -25,11 +12,11 @@ body {
 }
 
 .container {
-    background-color: var(--container-color);
-    color: var(--text-color); /* Updated text color */
+    background-color: #fff;
+    color: #333;
     padding: 3rem;
     border-radius: 1rem;
-    border: 2px solid var(--lighter-color);
+    border: 2px solid rgba(51, 105, 231, 0.9);
     display: flex;
     justify-content: center;
     align-items: center;
@@ -64,15 +51,15 @@ label {
 .number-input {
     width: 2rem;
     padding: 0.5rem;
-    border: 1px solid var(--lighter-color);
+    border: 1px solid rgba(51, 105, 231, 0.9);
     border-radius: 0.5rem;
 }
 
 .password-display {
-    background-color: var(--textbox-color);
-    color: var(--text-color); /* Updated text color */
+    background-color: #f5f5f5;
+    color: #333;
     padding: 1rem;
-    border: 1px solid var(--lighter-color);
+    border: 1px solid rgba(51, 105, 231, 0.9);
     height: 2rem;
     width: 350px;
     display: flex;
@@ -85,9 +72,9 @@ label {
 
 .btn {
     grid-column: span 2;
-    background-color: var(--color);
+    background-color: #3369e7;
     border: none;
-    color: white;
+    color: #fff;
     padding: 0.5rem 1rem;
     font-weight: bold;
     cursor: pointer;
@@ -96,21 +83,21 @@ label {
 }
 
 .btn:hover {
-    background-color: var(--lighter-color);
+    background-color: rgba(51, 105, 231, 0.9);
 }
 
 input[type="range"]::-webkit-slider-thumb {
-    -webkit-appearance: none;
+    appearance: none;
     width: 15px;
     height: 15px;
-    background-color: var(--color);
+    background-color: #3369e7;
     border-radius: 50%;
-    border: 2px solid white;
+    border: 2px solid #fff;
     box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
 }
 
 input[type="range"]::-webkit-slider-runnable-track {
     height: 5px;
-    background-color: var(--lighter-color);
+    background-color: rgba(51, 105, 231, 0.9);
     border-radius: 2.5px;
 }
